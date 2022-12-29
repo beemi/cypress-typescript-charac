@@ -1,0 +1,14 @@
+{
+  "name": "cypress-typescript-example",
+  "description": "Example of using Cypress with TypeScript",
+  "version": "1.0.0",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:run:ci": "cypress run --record --key 1f9c1b1c-1c1c-1c1c-1c1c-1c1c1c1c1c1c"
+  },
+  "devDependencies": {
+    "cypress": "^12.0.2",
+    "typescript": "^4.9.4"
+  }
+}
