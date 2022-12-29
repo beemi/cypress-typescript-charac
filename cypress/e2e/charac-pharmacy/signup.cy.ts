@@ -8,9 +8,10 @@ describe("charac pharmacy signup", () => {
     it("should be able to signup", () => {
         cy.title().should("eq", "Charac");
 
-        cy.get("span[class='auth-btn-text'] span")
-            .should("be.visible")
-            .click()
-            .log("clicked on signup button");
+        cy.xpath("//span[contains(text(),'Sign Up')]").should("be.visible").click().log("clicked on signup button");
+
+        cy.xpath("//ion-text[normalize-space()='I am a Customer']").should("be.visible").click().log("clicked on I am a customer button");
+
+        cy.signUp("test","test","077721234566","test121212@example.com","test1234");
     });
 });
